@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link href="css/stylish-portfolio.css" rel="stylesheet">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<title></title>
+</head>
+<style>
+
+  	.shadowImage2{
+  		min-height: 4000px;
+  		min-width: 4000px;
+  		width: 100%;
+  		height: 100%;
+  		position: absolute;
+  		top: 0px;
+  		left: 0;
+  	}
+	a.fa-bell-o {
+		position: relative;
+		font-size: 1em;
+		color: black;
+		cursor: pointer;
+	}
+	span.fa-circle {
+		position: absolute;
+		font-size: 1.4em;
+		top: -8px;
+		color: red;
+		right: -8px;
+	}
+	span.num {
+		position: absolute;
+		font-size: 0.8em;
+		top: -5px;
+		color: #fff;
+		right: -3px;
+	}
+	@media (max-width: 768px) {
+  	.form-group {
+    display: none;
+    background-color: orange;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .nomargin{
+  	margin-left: -100px;	
+  }
+
+  	#bell{
+  		position: fixed;
+  		right :0px;
+  		top:0px;
+  		z-index: 1;
+  		margin-top: -2px;
+  		margin-right: 7%;
+  	}
+  	#brand{
+  		width:150px;
+  		margin-left: -20px;
+  	}
+  	#searchButton{
+  		position: fixed;
+  		right :0px;
+  		top:0px;
+  		z-index: 1;
+  		margin-top: -2px;
+  		margin-right: 35%;
+  	}
+  	
+  	
+	.whitePlease{
+		color: black;
+		font-size:1.3em;
+		margin-top: -5px;
+  		background-color: white;
+  		border-color: white;
+	}
+}
+</style>
+<body onload=$("#menu-close").click();$("#menu-close").click();>
+
+	<nav class="navbar navbar-default navbar-fixed-top" style="background:white">
+		<div class="container" style="background:white; margin-left: 9px">
+
+			<div class="col-ms-4">
+				<a class="navbar-brand" href="#">
+					<img id="brand" alt="Brand" src="images/logo.png
+					">
+				</a>
+
+			</div>
+			<div class="col-sm-3 col-sm-push-1" style="padding:0px ; margin-top: 12px;  ">
+				<div class="form-group">
+					<input class="form-control input-sm" type="text" id="inputSmall" placeholder="Position or Company">
+				</div>
+			</div>
+			<div class="col-sm-2 col-sm-push-1" style="padding:0px ; margin-top: 12px">
+				<div class="form-group">
+					<select class="form-control input-sm" id="select" >
+						<option value="">Location</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+				</div>
+			</div>
+			<div id="searchButton">
+			<div class="col-sm-1 col-sm-push-1" style="padding:0px ; margin-top: 12px">
+				<button class="whitePlease btn btn-info btn-default btn-sm" type="button"><i class=" fa fa-search"></i></button>
+
+			</div>
+			</div>
+			<ul id="bell" style="position: fixed; margin-top: -2px; margin-right: 100px;right:0px">
+
+				<a class="fa fa-bell-o" style="margin-top: 20px">
+					<span class="fa fa-circle"></span>
+					<span class="num">1</span>
+				</a>
+				</ul>
+
+				<!--navigation-->
+				<a id="menu-toggle" href="#" class="btn btn-lg toggle"><i class="fa fa-bars"  style="margin-top: -2px; margin-right: 35px; color:black"></i></a>
+				<nav id="sidebar-wrapper" style="margin-top: -43px ;border-left:1px solid grey">
+					<ul class="sidebar-nav" style="border-width: 3px ; border-left-color: #e7e7e7" >
+						<a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle" style="background-color: #e7e7e7"><i class="fa fa-times" ></i></a>
+						<li class="sidebar-brand" style="background-color: #e7e7e7">
+							<a href="#top" onclick=$("#menu-close").click();></a>
+						</li>
+						<li >
+							<a href="#top" onclick=$("#menu-close").click();>&nbsp &nbsp &nbsp BROWSE JOB</a>
+						</li>
+						<li>
+							<a href="#about" onclick=$("#menu-close").click();>&nbsp &nbsp &nbsp CAREER ADVICE</a>
+						</li>
+						<li>
+							<a href="#services" onclick=$("#menu-close").click();>&nbsp &nbsp &nbsp EMPLOYERS</a>
+						</li>
+						<hr style="height:0.5px;border:none;color:grey;background-color:grey;" />
+						<li>
+							<a href="#portfolio" onclick=$("#menu-close").click();><i class=" fa fa-user"></i> &nbsp PROFILE</a>
+						</li>
+						<li>
+							<a href="#contact" onclick=$("#menu-close").click();><i class=" fa fa-trophy"></i> &nbsp SKILL</a>
+						</li>
+						<li>
+							<a href="#contact" onclick=$("#menu-close").click();><i class=" fa fa-street-view"></i> &nbsp RESUME</a>
+						</li>
+						<li>
+							<a href="#contact" onclick=$("#menu-close").click();><i class=" fa fa-certificate"></i> &nbsp  CERTIFICATE</a>
+						</li>
+						<li>
+							<a href="#contact" onclick=$("#menu-close").click();><i class=" fa fa-star"></i> &nbsp SAVED JOBS</a>
+						</li>
+						<li>
+							<a href="#contact" onclick=$("#menu-close").click();><i class=" fa fa-envelope-open"></i> &nbsp DISMISSED JOBS</a>
+						</li>
+						<li>
+							<a href="#contact" onclick=$("#menu-close").click();><i class=" fa fa-send"></i> &nbsp &nbsp  APPLIED JOBS</a>
+						</li>
+						<li>
+							<a href="#contact" onclick=$("#menu-close").click();><i class=" fa fa-envelope"></i> &nbsp JOB ALLERT</a>
+						</li>
+						<li>
+							<a href="#contact" onclick=$("#menu-close").click();><i class=" fa fa-wrench"></i> &nbsp SETTINGS</a>
+						</li> 
+						<hr style="height:0.5px;border:none;color:grey;background-color:grey;" />
+						
+						<li>
+							<a href="#contact" onclick=$("#menu-close").click();><i class=" fa fa-sign-out"></i> SIGN OUT</a>
+						</li>
+					</ul>
+				</nav>
+
+			
+		</div>
+	</nav>
+<!-- content -->
+<br><br>
+
+<div class="col-md-8" style="padding:0px ;border-right:1px solid #e7e7e7 ">
+<div class="panel panel-primary" style="border-style: none ;margin:none ; border-color:white; padding-right: 0px">
+  <div class="panel-body text-right" style="border-style: none ; border-color:white;  padding-right: 0px; margin-left:10%" >
+  <div class="text-right">
+  <div class="nomargin" >
+    <img id="caption" src ="images/study3.jpg" width="100%"  height="200px" >
+</div>
+</div>
+
+
+
+</div>
+</div>
+<div id="fixedCaption" style="position: absolute  ; margin-left: 15%" >
+<img src="images/icon.png" width="100px" id="captionID">
+<bR>
+<div id ="titleCaptionParent" style ="font-size: 2em">
+<div id = "titleCaption" style ="color: white ; font-weight: bold">
+ John Doe
+</div>
+</div>
+
+<div id ="subCaption" style ="font-size: 1.2em; color: white ;">
+	A Web Programmer <br>
+	Web Developer at Compance
+</div>
+</div>
+<table class="table " border="0" style=" border-style:none ;border-color:white ; width:100%; text-align: left ;margin-left:10% ; width: 300px" >
+  <tbody>
+
+    <tr>
+      <td><h3>PROFILE</h3></td>
+    </tr>
+    <tr>
+      <td>Urbanhire ID</td>
+      <td>2342</td>
+    </tr>
+    <tr>
+      <td>Username</td>
+      <td>John Doe</td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td>John Doe</td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td>john.doe@gmail.com</td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td>Male</td>
+    </tr>
+    <tr>
+      <td>Birthday</td>
+      <td>12 January 1992</td>
+    </tr>
+    <tr>
+      <td>Headline</td>
+      <td>Web Developer</td>
+    </tr>
+    <tr>
+      <td>Phone</td>
+      <td>+62811818181</td>
+    </tr>
+    <tr>
+      <td>Address</td>
+      <td>Jakarta</td>
+    </tr>
+    </tbody>
+ </table>
+
+</div>
+<div class= "col-md-4 " >
+<br><br>
+<img src ="images/pic1.jpg" width="300px" height="161px">
+<br><br>
+<img src ="images/pic1.jpg" width="300px" height="161px" >
+
+</div>
+<div id="shadow" style="position: fixed;">
+<img id="shadowImage" src="images/80.png" style="repeat-y; width:100%; height:auto">
+</div>
+
+
+
+
+	<script>
+	function sfs()
+	{
+		var x= document.getElementById("caption").width ;
+		var y= document.getElementById("caption").height ;
+		var z = y * 0.5 ;
+		
+		var y  = y - (y*0.9);
+		var fsize =  (y/20);
+		
+		var fsize2 = (y/23);
+		var y = y + "px";
+		var z = z + "px";
+		var x = x + "px";
+		var fsize = fsize + "em";
+		var fsize2 =fsize2 + "em";
+		document.getElementById("fixedCaption").style.width = x ;
+		document.getElementById("fixedCaption").style.top = y ;
+		document.getElementById("captionID").style.width = z ;
+		document.getElementById("titleCaption").style.fontSize= fsize;
+		document.getElementById("subCaption").style.fontSize= fsize2;
+		
+		document.getElementById("fixedCaption").style.height = y ;
+	};
+	window.onscroll = function() {myFunction()};
+	function myFunction() {
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+        document.getElementById("shadow").className = "shadowImage2";
+    } 
+};
+		$("#menu-close").click(function(e) {
+			e.preventDefault();
+			document.getElementById("shadowImage").style.visibility = "hidden";
+			$("#sidebar-wrapper").toggleClass("active");
+		});
+
+		$("#menu-toggle").click(function(e) {
+			e.preventDefault();
+			document.getElementById("shadowImage").style.visibility = "visible";
+			$("#sidebar-wrapper").toggleClass("active");
+		});
+		$(function() {
+			$('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+		$(function(){
+		setInterval(oneSecondFunction, 1);
+		});
+
+		function oneSecondFunction() {
+		sfs();
+
+		}
+
+	</script>
+
+</body>
+</html>
